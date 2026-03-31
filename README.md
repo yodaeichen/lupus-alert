@@ -14,7 +14,7 @@
 Auf dem **Proxmox-Host als root** ausführen:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/DEIN_GITHUB_USER/lupus-alert/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/yodaeichen/lupus-alert/main/install.sh)
 ```
 
 Das Skript fragt interaktiv alle Einstellungen ab und richtet vollautomatisch ein:
