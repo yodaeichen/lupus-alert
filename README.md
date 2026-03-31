@@ -2,7 +2,7 @@
 
 > Webhook-Empfänger für **LUPUS Mobilfunk-Rauchwarnmelder** – alarmiert parallel per Telegram, ntfy Push, E-Mail und SMS.
 
-![CI](https://github.com/DEIN_GITHUB_USER/lupus-alert/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/yodaeichen/lupus-alert/actions/workflows/ci.yml/badge.svg)
 ![Node](https://img.shields.io/badge/Node.js-20-green?logo=node.js)
 ![Platform](https://img.shields.io/badge/Proxmox-LXC-orange?logo=proxmox)
 ![License](https://img.shields.io/badge/Lizenz-MIT-blue)
