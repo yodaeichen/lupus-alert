@@ -10,7 +10,7 @@
 set -euo pipefail
 
 # ── Repo-Konfiguration ────────────────────────────────────────────────────────
-GITHUB_USER="${GITHUB_USER:-DEIN_GITHUB_USER}"
+GITHUB_USER="${GITHUB_USER:yodaeichen}"
 GITHUB_REPO="${GITHUB_REPO:-lupus-alert}"
 GITHUB_BRANCH="${GITHUB_BRANCH:-main}"
 RAW_BASE="https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}"
