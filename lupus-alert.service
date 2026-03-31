@@ -1,0 +1,30 @@
+[Unit]
+Description=LUPUS Alert Server – Webhook Alarmierung
+Documentation=https://github.com/your-org/lupus-alert
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=lupus
+Group=lupus
+WorkingDirectory=/opt/lupus-alert
+ExecStart=/usr/bin/node dist/index.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=lupus-alert
+
+# Sicherheitshärtung
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/lupus-alert
+ProtectHome=true
+
+# Environment
+EnvironmentFile=/opt/lupus-alert/.env
+
+[Install]
+WantedBy=multi-user.target
